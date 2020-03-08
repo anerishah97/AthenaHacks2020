@@ -1,0 +1,62 @@
+body {
+	background-image:url("blackpuzzle.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.a-category-header {
+	font-family: Candara;
+	font-size: 50px;
+	text-align: center; 
+	margin-top: 70px;
+	color: #c3073f;
+}
+
+.a-category-container {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	margin-top: 40px;
+	margin-bottom: 50px;
+	margin-left: 150px;
+	margin-right: 150px;
+	align-items: center;
+	justify-content: center;
+	font-family: Candara;
+}
+
+.a-categories {
+	display: grid;
+	border: 1px solid grey;
+	border-radius: 10px;
+	box-shadow: 2px 2px 1px #ffffff;
+	padding: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	text-align: center;
+	align-self: center;
+	width: 80%;
+	color: #C3073F;
+	background-color: rgb(195, 7, 63, 0.1);
+}
+
+.a-categories:hover {
+	cursor: pointer;
+	display: grid;
+	border: 1px solid grey;
+	border-radius: 10px;
+	box-shadow: 2px 2px 1px #ffffff;
+	padding: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	text-align: center;
+	align-self: center;
+	width: 80%;
+	color: #ffffff;
+	background-color: rgb(195, 7, 63, 1);
+	font-style: italic;
+	font-size: 18px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" href="homestyles.css">
+</head>
+<body>
+		<div id="header">
+			<div id="logo">
+				<img id="logoimage" src="gender.png" width="100px" height="100px">
+			</div>
+			<div>
+				<h1 id="heading">Be SexEd</h1>
+			</div>
+		</div>
+		<div id="background">
+			<div class="buttonplace">
+				<h1 id="text">Let's start learning!</h1>
+				<a href="choosecategory/category.html"><button class="click" onmouseover="hover(this)" onmouseout="unhover(this)"><img src="pinkidea.png" width="20px" height="20px" id="idea" style="font-weight: bolder;margin-right: 10px">LEARN</button><br></a>
+				<button class="click" onmouseover="hover2(this)" onmouseout="unhover2(this)"><img src="pinktalk.png" width="20px" height="20px" id="discuss" style="font-weight: bolder;margin-right: 10px">DISCUSS</button>
+			</div>
+			<div class="chatbot">
+				<img src="question-mark.png" id="chat" width="50px" height="50px" onclick="loadChatbot()">
+			</div>
+		</div>
+		<iframe allow="microphone;" width="350" height="430" id="chatbot" style="display:none" src="https://console.dialogflow.com/api-client/demo/embedded/c5ed90d4-ab7b-470d-afb6-f850fcc644c8">
+		</iframe>
+		<script type="text/javascript">
+			function loadChatbot()
+			{
+				var x = document.getElementById("chatbot");
+  				if (x.style.display === "none") 
+  				{
+  		  			x.style.display = "block";
+  				} 
+  				else 
+  				{
+    				x.style.display = "none";
+  				}
+			}
+			function hover(element)
+			{
+				element.childNodes[0].setAttribute("src", "blackidea.png");
+			}
+			function unhover(element)
+			{
+				element.childNodes[0].setAttribute("src", "pinkidea.png");
+			}
+			function hover2(element)
+			{
+				element.childNodes[0].setAttribute("src", "blacktalk.png");
+			}
+			function unhover2(element)
+			{
+				element.childNodes[0].setAttribute("src", "pinktalk.png");
+			}
+		</script>
+</body>
+</html>
