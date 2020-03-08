@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>dashboard</title>
+  <link rel="stylesheet" href="style.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+  <script language="JavaScript">
+  function displayLineChart() {
+    var data = {
+        labels: ["Mon", "Tues", "Wed", "Thur", "Fri", "Sat", "Sun"],
+        datasets: [
+            
+            {
+                label: "My Second dataset",
+                fillColor: "rgba(195, 7, 63, 1)",
+                strokeColor: "rgba(151,187,205,1)",
+                pointColor: "rgba(151,187,205,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(151,187,205,1)",
+                data: [10, 5, 0, 25, 5, 15, 0]
+            }
+        ]
+    };
+    var ctx = document.getElementById("lineChart").getContext("2d");
+    var options = {};
+    var lineChart = new Chart(ctx).Line(data, options);
+
+  }
+
+</script>
+
+</head>
+<body onload="displayLineChart();">
+
+<div class="c100 p100 blue">
+      <span>Progress!</span>
+      <div class="slice">
+        <div class="bar"></div>
+        <div class="fill"></div>
+      </div>
+  </div>
+
+
+</br>
+</br>
+</br>
+</br>
+</br>
+
+</br>
+</br>
+</br>
+</br>
+
+<div class="wrapper">
+  <div class="c100 p90 orange">
+      <span>Anatomy</span>
+      <div class="slice">
+        <div class="bar"></div>
+        <div class="fill"></div>
+      </div>
+  </div>
+  <div class="c100 p75 pink">
+      <span>Control</span>
+      <div class="slice">
+        <div class="bar"></div>
+        <div class="fill"></div>
+      </div>
+  </div>
+  <div class="c100 p70 green">
+      <span>Consent</span>
+      <div class="slice">
+        <div class="bar"></div>
+        <div class="fill"></div>
+      </div>
+  </div>
+  <a href="../firstTime.html">
+  <div id = "firstAgain" class="c100 p55 orange">
+      <span>1st Time</span>
+      <div class="slice">
+        <div class="bar"></div>
+        <div class="fill"></div>
+      </div>
+  </div>
+  </a>
+</div>
+<div class="wrapper">
+  <div class="c100 p30 blue">
+      <span>Body+</span>
+      <div class="slice">
+        <div class="bar"></div>
+        <div class="fill"></div>
+      </div>
+  </div>
+  <div class="c100 p20 pink">
+      <span>Identity</span>
+      <div class="slice">
+        <div class="bar"></div>
+        <div class="fill"></div>
+      </div>
+  </div>
+  <div class="c100 p70 green">
+      <span>Mbate</span>
+      <div class="slice">
+        <div class="bar"></div>
+        <div class="fill"></div>
+      </div>
+  </div>
+  <div class="c100 p85 orange">
+      <span>Period.s</span>
+      <div class="slice">
+        <div class="bar"></div>
+        <div class="fill"></div>
+      </div>
+  </div>
+</div>
+<div class="wrapper">
+  <div class="c100 p90 blue">
+      <span>Hygiene</span>
+      <div class="slice">
+        <div class="bar"></div>
+        <div class="fill"></div>
+      </div>
+  </div>
+  <div class="c100  pink">
+      <span>Pregnancy</span>
+      <div class="slice">
+        <div class="bar"></div>
+        <div class="fill"></div>
+      </div>
+  </div>
+  <div class="c100  green">
+      <span>Safe Sex</span>
+      <div class="slice">
+        <div class="bar"></div>
+        <div class="fill"></div>
+      </div>
+  </div>
+  <div class="c100  orange">
+      <span>R.Health</span>
+      <div class="slice">
+        <div class="bar"></div>
+        <div class="fill"></div>
+      </div>
+  </div>
+</div>
+<div class="wrapper">
+  <div class="c100  blue">
+      <span>Sex+</span>
+      <div class="slice">
+        <div class="bar"></div>
+        <div class="fill"></div>
+      </div>
+  </div>
+  <div class="c100  pink">
+      <span>Orient</span>
+      <div class="slice">
+        <div class="bar"></div>
+        <div class="fill"></div>
+      </div>
+  </div>
+  <div class="c100  green">
+      <span>STDs</span>
+      <div class="slice">
+        <div class="bar"></div>
+        <div class="fill"></div>
+      </div>
+  </div>
+</div>
+</br>
+</br>
+</br>
+
+
+
+			<div>
+			
+			<div class="box" style="margin-left: 30px; margin-right: 30px;">
+    			<canvas id="lineChart" height="450" width="1200"></canvas>
+ 			</div>
+			
+       <input type="button" class = "an-button" id='script' name="scriptbutton" value=" Run Script " onclick="goPython()"> Yooo
+
+       <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+   
+       <script>
+           function goPython(){
+               $.ajax({
+                 url: "smtp-mail.py",
+                context: document.body
+               }).done(function() {
+                alert('finished python script');;
+               });
+           }
+       </script>
+      </div>
+  <script  src="script.js">
+    
+  </script>
+
+</body>
+</html>

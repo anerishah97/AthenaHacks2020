@@ -153,7 +153,7 @@ function openNextQuestion(){
     var k = resetPage();
     if(k == 0)
     {
-        window.open("choosecategory/category.html");
+        window.open("dashboard/index.html");
     }
     else
     { 
